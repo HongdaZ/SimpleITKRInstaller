@@ -41,7 +41,7 @@ mkdir -p SITK
     cd SITK &&
     [ -d SimpleITK ] ||
       ( git clone  ${SimpleITKGit} &&
-          cd SimpleITK || exit 1
+          cd SimpleITK ) || exit 1
 
     mkdir -p Build &&
     cd Build &&
