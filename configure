@@ -7,7 +7,6 @@
 # Requires git and cmake
 #
 export SimpleITKGit=https://github.com/HongdaZ/SimpleITK
-export SITKTAG=v1.1.0
 
 export PKGBASED=$(pwd)
 echo ${PKGBASED}
@@ -42,8 +41,7 @@ mkdir -p SITK
     cd SITK &&
     [ -d SimpleITK ] ||
       ( git clone  ${SimpleITKGit} &&
-          cd SimpleITK &&
-          git checkout  ${SITKTAG} ) || exit 1
+          cd SimpleITK || exit 1
 
     mkdir -p Build &&
     cd Build &&
