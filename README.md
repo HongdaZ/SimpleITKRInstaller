@@ -1,6 +1,7 @@
 
 # SimpleITKRInstaller
-[![CircleCI](https://circleci.com/gh/SimpleITK/SimpleITKRInstaller.svg?style=shield)](https://circleci.com/gh/SimpleITK/SimpleITKRInstaller)   [![Build Status](https://dev.azure.com/SimpleITK-DevOps/SimpleITK/_apis/build/status/SimpleITK.SimpleITKRInstaller?branchName=master)](https://dev.azure.com/SimpleITK-DevOps/SimpleITK/_build/latest?definitionId=6&branchName=master)
+
+![Build Status](https://github.com/SimpleITK/SimpleITKRInstaller/actions/workflows/main.yml/badge.svg)
 
 
 A devtools based installer for SimpleITK R installer.
@@ -11,7 +12,7 @@ devtools::install_github("SimpleITK/SimpleITKRInstaller")
 or, turn on mutlicore compilation using
 
 ```R
-devtools::install_github("SimpleITK/SimpleITKRInstaller", args=c("--configure-vars='MAKEJ=16'"))
+devtools::install_github("SimpleITK/SimpleITKRInstaller", args=c("--configure-vars=MAKEJ=6"))
 ```
 
 Requires _cmake_ and _git_ in the path.
